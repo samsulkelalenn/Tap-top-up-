@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taptopup - Top Up Game</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="flex items-center justify-between px-4 py-3 bg-white shadow">
+    <div class="text-2xl font-bold text-indigo-600">Taptopup</div>
+    <div class="flex items-center space-x-4">
+      <button class="text-indigo-600 font-semibold">Masuk</button>
+    </div>
+  </header>
+
+  <!-- Kategori Menu -->
+  <div class="flex flex-wrap gap-2 px-4 py-3 bg-white sticky top-0 z-10 shadow-sm">
+    <button class="px-3 py-1 border border-indigo-600 text-indigo-600 rounded-full">🔥 Lagi Populer</button>
+    <button class="px-3 py-1 border border-indigo-600 text-indigo-600 rounded-full">Top Up Langsung</button>
+    <button class="px-3 py-1 border border-indigo-600 text-indigo-600 rounded-full">🌟 Baru Rilis</button>
+    <button class="px-3 py-1 border border-indigo-600 text-indigo-600 rounded-full">Top Up Login</button>
+    <button class="px-3 py-1 border border-indigo-600 text-indigo-600 rounded-full">Voucher</button>
+    <button class="px-3 py-1 border border-indigo-600 text-indigo-600 rounded-full">Pulsa</button>
+    <button class="px-3 py-1 border border-indigo-600 text-indigo-600 rounded-full">Entertainment</button>
+  </div>
+
+  <!-- Produk Top Up Langsung -->
+  <section class="px-4 py-5">
+    <h2 class="text-xl font-semibold mb-4">Top Up Langsung</h2>
+    <div class="grid grid-cols-3 gap-3">
+      <div class="bg-white shadow rounded p-2 text-center">
+        <img src="https://via.placeholder.com/100" alt="AFK Journey" class="mx-auto mb-2 rounded">
+        <p>AFK Journey</p>
+        <a href="#form" class="text-sm text-indigo-600">Top Up</a>
+      </div>
+      <div class="bg-white shadow rounded p-2 text-center">
+        <img src="https://via.placeholder.com/100" alt="Free Fire" class="mx-auto mb-2 rounded">
+        <p>Free Fire Global</p>
+        <a href="#form" class="text-sm text-indigo-600">Top Up</a>
+      </div>
+      <div class="bg-white shadow rounded p-2 text-center">
+        <img src="https://via.placeholder.com/100" alt="Eggy Party" class="mx-auto mb-2 rounded">
+        <p>Eggy Party</p>
+        <a href="#form" class="text-sm text-indigo-600">Top Up</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form Pemesanan Manual -->
+  <section id="form" class="px-4 py-6 bg-white shadow-md">
+    <h2 class="text-xl font-bold mb-4">Form Pemesanan</h2>
+    <form class="space-y-4">
+      <div>
+        <label class="block mb-1">Nama Game</label>
+        <input type="text" placeholder="Contoh: Free Fire" class="w-full border p-2 rounded" />
+      </div>
+      <div>
+        <label class="block mb-1">User ID</label>
+        <input type="text" placeholder="Masukkan ID Game" class="w-full border p-2 rounded" />
+      </div>
+      <div>
+        <label class="block mb-1">Nominal</label>
+        <select class="w-full border p-2 rounded">
+          <option>85 Diamond - Rp10.000</option>
+          <option>170 Diamond - Rp20.000</option>
+        </select>
+      </div>
+      <div>
+        <label class="block mb-1">No WhatsApp Aktif</label>
+        <input type="text" placeholder="08xxxxx" class="w-full border p-2 rounded" />
+      </div>
+      <div>
+        <label class="block mb-1">Upload Bukti Transfer</label>
+        <input type="file" class="w-full border p-2 rounded" />
+      </div>
+      <button type="submit" class="w-full bg-indigo-600 text-white p-2 rounded">Kirim Pesanan</button>
+    </form>
+  </section>
+
+  <!-- Bottom Menu -->
+  <footer class="fixed bottom-0 left-0 right-0 bg-white shadow-md border-t px-4 py-2 flex justify-between text-sm">
+    <button class="flex flex-col items-center text-indigo-600 font-semibold">
+      <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7m-7-7v18"/></svg>
+      Home
+    </button>
+    <button class="flex flex-col items-center">
+      <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h2l1 9h12l1-9h2"/></svg>
+      Transaksi
+    </button>
+    <button class="flex flex-col items-center">
+      <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      Promo
+    </button>
+    <button class="flex flex-col items-center">
+      <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+      Hadiahku
+    </button>
+  </footer>
+</body>
+</html>
